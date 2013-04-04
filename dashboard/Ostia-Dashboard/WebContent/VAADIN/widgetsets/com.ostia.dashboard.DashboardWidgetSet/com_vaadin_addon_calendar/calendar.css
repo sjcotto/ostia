@@ -12,7 +12,7 @@
  * If not, see <http://vaadin.com/license/cval-2.0> or
  * <http://www.gnu.org/licenses> respectively.
  */
-/** Calendar */
+/** Calendar */ 
 
 /* Global resize style */
 .v-calendar-nresize DIV DIV {
@@ -64,20 +64,20 @@
 	overflow: hidden;
 	background: transparent url(img/arrows.png) no-repeat 50% 0;
 	opacity: .3;
-	filter: alpha(opacity =   30);
+	filter: alpha(opacity = 30);
 	cursor: default;
 }
 
 .v-calendar-header-week .v-calendar-back:hover,.v-calendar-header-week .v-calendar-next:hover
 	{
 	opacity: .6;
-	filter: alpha(opacity =   60);
+	filter: alpha(opacity = 60);
 }
 
 .v-calendar-header-week .v-calendar-back:active,.v-calendar-header-week .v-calendar-next:active
 	{
 	opacity: 1;
-	filter: alpha(opacity =   100);
+	filter: alpha(opacity = 100);
 }
 
 .v-calendar-header-week .v-calendar-next {
@@ -111,7 +111,8 @@
 }
 
 /* Otherwise IE has uneven cell widths */
-.v-ie6 .v-calendar-month,.v-ie7 .v-calendar-month {
+.v-ie6 .v-calendar-month,
+.v-ie7 .v-calendar-month {
 	table-layout: fixed;
 }
 
@@ -130,7 +131,7 @@
 }
 
 .v-calendar-month-day-dragemphasis {
-	background-color: #a8a8a8;
+		background-color: #a8a8a8;
 }
 
 .v-calendar-month-day-scrollable {
@@ -149,7 +150,7 @@
 .v-calendar-day-number:hover {
 	cursor: pointer;
 	opacity: .6;
-	filter: alpha(opacity =   60);
+	filter: alpha(opacity = 60);
 }
 
 .v-calendar-month .v-calendar-spacer,.v-calendar-month .v-calendar-bottom-spacer,.v-calendar-month .v-calendar-bottom-spacer-empty
@@ -162,7 +163,7 @@
 .v-calendar-month .v-calendar-bottom-spacer:hover {
 	cursor: pointer;
 	opacity: .6;
-	filter: alpha(opacity =   60);
+	filter: alpha(opacity = 60);
 }
 
 .v-calendar-event {
@@ -172,6 +173,7 @@
 	cursor: pointer;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	
 	outline: none;
 }
 
@@ -264,8 +266,7 @@ div.v-calendar-event-all-day {
 	outline: none;
 }
 
-.v-calendar-day-times .v-datecellslot,.v-calendar-day-times .v-datecellslot-even
-	{
+.v-calendar-day-times .v-datecellslot,.v-calendar-day-times .v-datecellslot-even {
 	border-bottom: 1px solid #ccc;
 }
 
@@ -311,7 +312,7 @@ div.v-calendar-event-all-day {
 	border: 1px solid #777;
 	background: #eee;
 	opacity: .8;
-	filter: alpha(opacity =   80);
+	filter: alpha(opacity = 80);
 	height: 14px; /* "min-height" */
 }
 
@@ -323,7 +324,7 @@ div.v-calendar-event-all-day {
 	overflow: hidden;
 	background: #5a6c86;
 	opacity: .6;
-	filter: alpha(opacity =   60);
+	filter: alpha(opacity = 60);
 	z-index: 2;
 }
 
@@ -348,8 +349,8 @@ div.v-calendar-event-all-day {
 }
 
 /** Sizes for undefined Calendar **/
-.v-ie7 .v-calendar-month-sizedwidth,.v-ie6 .v-calendar-month-sizedwidth
-	{
+.v-ie7 .v-calendar-month-sizedwidth,
+.v-ie6 .v-calendar-month-sizedwidth {
 	table-layout: auto;
 }
 
@@ -397,12 +398,10 @@ div.v-calendar-event-all-day {
 	width: 42px;
 }
 
-.v-calendar-day-times-Vsized .v-datecellslot,.v-calendar-day-times-Vsized .v-datecellslot-even
-	{
+.v-calendar-day-times-Vsized .v-datecellslot,.v-calendar-day-times-Vsized .v-datecellslot-even {
 	height: 18px;
 }
 
-.v-calendar-day-times-Hsized,.v-calendar-day-times-Hsized .v-datecellslot,.v-calendar-day-times-Hsized .v-datecellslot-even
-	{
+.v-calendar-day-times-Hsized, .v-calendar-day-times-Hsized .v-datecellslot,.v-calendar-day-times-Hsized .v-datecellslot-even {
 	width: 200px;
 }

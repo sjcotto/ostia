@@ -17,6 +17,7 @@ import java.util.Locale;
 import com.ostia.dashboard.data.DataProvider;
 import com.ostia.dashboard.data.Generator;
 import com.ostia.dashboard.data.MyConverterFactory;
+import com.ostia.dashboard.view.ApisView;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Title;
 import com.vaadin.event.ShortcutAction.KeyCode;
@@ -59,7 +60,7 @@ import com.vaadin.ui.VerticalLayout;
 @Title("QuickTickets Dashboard")
 public class DashboardUI extends UI {
 
-    DataProvider dataProvider = new DataProvider();
+    public DataProvider dataProvider = new DataProvider();
 
     private static final long serialVersionUID = 1L;
 
@@ -78,7 +79,7 @@ public class DashboardUI extends UI {
 
 		{
             put("/dashboard", DashboardView.class);
-            put("/apis", SalesView.class);
+            put("/apis", ApisView.class);
             put("/model", SalesView.class);
             put("/pages", SalesView.class);
             put("/themes", SalesView.class);
